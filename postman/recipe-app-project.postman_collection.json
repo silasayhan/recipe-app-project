@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "751682ab-3f10-4e2d-a93c-dbce8c5d7917",
+		"name": "recipe-app-project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "50190260"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5000/signUp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"admin@test.com\",\r\n  \"password\": \"12345\",\r\n  \"role\": \"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/signUp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"signUp"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -21,10 +21,10 @@ export default function AddRecipe() {
   const fetchCategories = async () => {
     try {
       const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000'
-const response = await axios.get(`${API_URL}/categories`)
+      const response = await axios.get(`${API_URL}/categories`)
       setCategories(response.data)
     } catch (error) {
-      console.error('Kategoriler yüklenemedi:', error)
+      console.error('Kategoriler Yüklenemedi:', error)
     }
   }
 
@@ -44,7 +44,7 @@ const response = await axios.get(`${API_URL}/categories`)
 
     const token = localStorage.getItem('token')
     if (!token) {
-      alert('Lütfen giriş yapın!')
+      alert('Lütfen Giriş Yapın!')
       navigate('/')
       return
     }
@@ -66,7 +66,7 @@ await axios.post(`${API_URL}/recipe`, data, {
           'Authorization': `Bearer ${token}`
         }
       })
-      alert('Tarif eklendi!')
+      alert('Tarif Eklendi!')
       navigate('/myRecipe')
     } catch (error) {
       alert('Hata: ' + (error.response?.data?.message || error.message))
@@ -87,11 +87,11 @@ await axios.post(`${API_URL}/recipe`, data, {
 
           <div className='form-control'>
             <label>Zaman (Dakika)</label>
-            <input type="text" name="time" className='input' placeholder="Örn: 30" value={formData.time} onChange={handleChange} required />
+            <input type="text" name="time" className='input' placeholder="Örnek: 30" value={formData.time} onChange={handleChange} required />
           </div>
 
           <div className='form-control'>
-            <label>Kategoriler (Ctrl+tıkla ile birden fazla seçebilirsin)</label>
+            <label>Kategoriler (Birden fazla seçebilirsiniz.)</label>
             <select name="categoryIds" className='input' multiple value={formData.categoryIds} onChange={handleChange}>
               {categories.map(cat => (
                 <option key={cat.id} value={cat.id}>{cat.name}</option>
@@ -101,12 +101,12 @@ await axios.post(`${API_URL}/recipe`, data, {
 
           <div className='form-control'>
             <label>Malzemeler</label>
-            <textarea name="ingredients" className='input-textarea' rows="5" placeholder="Her malzemeyi yeni satıra yazın" value={formData.ingredients} onChange={handleChange} required />
+            <textarea name="ingredients" className='input-textarea' rows="5" placeholder="Her malzemeyi yeni satıra yazınız." value={formData.ingredients} onChange={handleChange} required />
           </div>
 
           <div className='form-control'>
             <label>Yapılış</label>
-            <textarea name="instructions" className='input-textarea' rows="5" placeholder="Tarifin yapılışını yazın" value={formData.instructions} onChange={handleChange} required />
+            <textarea name="instructions" className='input-textarea' rows="5" placeholder="Tarifin yapılışını yazınız." value={formData.instructions} onChange={handleChange} required />
           </div>
 
           <div className='form-control'>

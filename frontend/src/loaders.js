@@ -7,7 +7,7 @@ export const recipesLoader = async () => {
     const response = await axios.get(`${API_URL}/recipe`)
     return response.data
   } catch (error) {
-    console.error('Tarifler yüklenemedi:', error)
+    console.error('Tarifler Yüklenemedi:', error)
     return []
   }
 }
@@ -22,7 +22,7 @@ export const myRecipesLoader = async () => {
     })
     return response.data
   } catch (error) {
-    console.error('Tariflerim yüklenemedi:', error)
+    console.error('Tariflerim Yüklenemedi:', error)
     return []
   }
 }
@@ -32,7 +32,7 @@ export const recipeDetailLoader = async ({ params }) => {
     const response = await axios.get(`${API_URL}/recipe/${params.id}`)
     return response.data
   } catch (error) {
-    console.error('Tarif detayı yüklenemedi:', error)
+    console.error('Tarif Detayı Yüklenemedi:', error)
     return null
   }
 }

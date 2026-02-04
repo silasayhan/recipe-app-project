@@ -58,6 +58,54 @@ npm run dev
 - Email: user@test.com
 - Password: 12345
 
-## Ekran Görüntüleri
+## Proje Görselleri
 
-Buraya ekran görüntüleri gelecek.
+### 🏠 Ana Sayfa
+
+<p align="center">
+  <img src="images/homepage.png" width="400" />
+  <img src="images/homepage-2.png" width="400" />
+</p>
+
+### 🔐 Giriş Ekranı
+
+<p align="center">
+  <img src="images/login.png" width="400" />
+</p>
+
+### 📝 Kayıt Olma Ekranı
+
+<p align="center">
+  <img src="images/sign-up.png" width="400" />
+</p>
+
+### ➕ Tarif Ekleme Sayfası
+
+<p align="center">
+  <img src="images/add-recipe.png" width="500" />
+</p>
+
+### ✏️ Tarifi Güncelleme Sayfası
+
+<p align="center">
+  <img src="images/edit-recipe.png" width="500" />
+</p>
+
+### 📋 Tariflerim Sayfası
+
+<p align="center">
+  <img src="images/my-recipe.png" width="500" />
+</p>
+
+### ⭐ Favoriler
+
+<p align="center">
+  <img src="images/favorites.png" width="500" />
+</p>
+
+### 🛠️ Admin Paneli
+
+<p align="center">
+  <img src="images/admin-panel.png" width="400" />
+  <img src="images/admin-panel-2.png" width="400" />
+</p>
